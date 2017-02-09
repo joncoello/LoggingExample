@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xunit;
 
+[assembly: log4net.Config.XmlConfigurator(Watch = true)]
 namespace LoggingExample.APITests
 {
     [Trait("Category", "API")]
